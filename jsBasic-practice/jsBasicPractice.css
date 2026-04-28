@@ -1,0 +1,84 @@
+/*styles of practice 1 html file*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+   padding: 10px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    white-space: nowrap;
+}
+header{
+    position: relative;
+    background-color: lightgreen;
+    padding: 5px;
+    width: 50%;
+    height: 60px;
+    border: 1px solid rgb(84, 109, 84);
+}
+main p{
+    font-size: 18px;
+}
+main button{
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(14, 14, 14);
+    background-color: #0066cc;
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.shopping-box{
+ display: flex;
+ flex-direction: column;
+ width: 200px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.36);
+padding-left: 5px;
+margin-top: 25px;
+ 
+}
+
+.shopping-box img{
+ width: 200px;
+}
+
+.shopping-button-container{
+    margin: 10px ;
+}
+.shopping-box p{
+ margin: 0;
+ margin-top: 10px;
+}
+.shop-button1{
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    border: 3px solid black;
+    margin-left: -4px;
+
+}
+
+.shop-button2{
+    margin-left: 5px;
+    background-color: orange;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    border: 3px solid black;
+}

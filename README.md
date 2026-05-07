@@ -8,7 +8,7 @@ Each folder represents a different set of topics or experiments.
 - js basic practice 
 <br>
 <br>
-![js-basic-practice](assets/js-basic%20practice.png)
+![js-basic-practice](assets/js-basic-practice.png)
 <br>
 <br>
 ![js-basic-practice](assets/js-basic.png)

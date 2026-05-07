@@ -9,19 +9,18 @@ Each folder represents a different set of topics or experiments.
 
 ![js-basic-practice](assets/js-basic-practice.png)
 
-![js-basic-practice](assets/js-basic.png)
-<br>
-<br>
+![js-basic-practice](assets/js-basic.png) 
+
+
 
 - variable-practice
-<br>
-<br>
+
 ![variable practice](assets/js-variable1.png)
-<br>
-<br>
+
+
 ![variable practice](assets/js-variable2.png)
-<br>
-<br>
+
+
 ![variable practice](assets/js-variable3.png)
 
 

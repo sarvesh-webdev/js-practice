@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sarvesh">
+    <meta name="description" content="practice file of variable of js">
+    <title>variable practice 2</title>
+    <link rel="stylesheet" href="variable-practice.css">
+</head>
+<body>
+    <header>
+        <h1> variable practice 2</h1>
+    </header>
+    <main>
+        <h2>1.creating a variable called name and saving my name in it. will display my name when click on the button below</h2>
+        <button onclick="
+        alert(`Name:  ${myName}`);">click for name</button>
+        <h2>2. now will display in console</h2>
+        <button onclick="console.log('Name:'+ myName);"> name in console</button>
+        <h2>3. one coffe($5), 2 bagel($3 each) and 1 soup ($9). calculating total using variables and displaying it in console</h2>
+        <button onclick="
+         console.log(`Total bill:$${total}`);">Total
+        </button>
+        <h2>4. amount of tax(10% ) on total, displaying in console </h2>
+        <button onclick="
+        console.log(`tax(10%) on total: $${total*0.1}`);">tax on total</button>
+        <h2>5. total of above with tax (10%), displaying in console</h2>
+
+        <button onclick="console.log(`Total with tax: $${total + total*0.1}`);">total with tax</button>
+
+    </main>
+    <footer><p>&copy; 2026 Sarvesh</p></footer>
+
+   <!--js code below-->
+   <script>
+    /*for 1 number practice*/
+    const myName = 'sarvesh';
+
+    /*for number 3 practice*/
+
+    const coffe = 5, bagel = 3 , soup = 9 ;
+    let total = coffe + 2*bagel + soup;
+
+    
+   </script>
+</body>
+</html>

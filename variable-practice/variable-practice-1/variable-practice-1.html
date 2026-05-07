@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sarvesh">
+    <meta name="description" content="practice file of variable topic of js">
+    <title>variable practice 1</title>
+    <!--css links-->
+    <link rel="stylesheet" href="variable-practice.css">
+</head>
+<body>
+    <header>
+        <h1>variable-practice</h1>
+        <p>click on "add to cart" button and open console to see the result</p>
+    </header>
+    <main>
+        <div class="img-container"><img src="../variable-practice-img/Shopping-Cart-PNG-Image-HD.png" alt="cart-img"></div>
+        <div class="button-container">
+          
+            <div class="button-container-topSection"> 
+             <button onclick=" 
+             cartQuantity++;
+             console.log(`Cart quantity:${cartQuantity}`); 
+             ">Add to cart</button>
+             <button onclick="
+              cartQuantity += 2;
+              console.log(`Cart quantity:${cartQuantity}`); 
+             ">+2</button>
+             <button onclick="
+             cartQuantity +=3;
+             console.log(`Cart quantity:${cartQuantity}`); 
+             ">+3</button>
+            </div>
+            <button onclick="
+            cartQuantity = 0;
+            console.log(`Cart quantity Reset \n Cart quantity:${cartQuantity}`); 
+            " class="reset-button">Reset</button>
+        </div>
+    </main>
+    <footer>
+    <p>&copy; 2026 Sarvesh</p>
+  </footer>
+
+  <!--js code below-->
+  <script>
+    let cartQuantity = 0;
+  </script>
+</body>
+</html>

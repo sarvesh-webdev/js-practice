@@ -1,0 +1,27 @@
+/*styles of variable practice file of html*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    gap: 10px;
+}
+
+.button-container div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-container button{
+    padding: 10px 20px;
+}

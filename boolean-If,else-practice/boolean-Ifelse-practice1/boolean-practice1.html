@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sarvesh">
+    <meta name="description" content="practice file for learning or practicing the concepts of if,else statemet and boolean"> 
+    <title>Boolean If else practice 1</title>
+    <link rel="stylesheet" href="boolean-practice1.css">
+</head>
+<body>
+    <header>
+        <h1>boolean if else practice 1</h1>
+    </header>
+    <main>
+        <h2>1. select current aprox time.it will pop appropriate message for current time.</h2>
+        <button onclick="
+        currentTime = (6+12)/2; // for average time
+
+        if(currentTime >=6 && currentTime <=12){
+            alert('Good morning!');
+        }else if(currentTime >= 13 && currentTime <= 17){
+            alert('Good Afternoon!');
+        }else{
+            alert('Good night!');
+        }
+        ">6-12</button>
+        <button onclick="
+        currentTime = (13+17)/2; //for average time
+
+        
+        if(currentTime >=6 && currentTime <=12){
+            alert('Good morning!');
+        } else if(currentTime >= 13 && currentTime <= 17){
+            alert('Good Afternoon!');
+        }else{
+            alert('Good night!');
+        }
+        ">13-17</button>
+        <button onclick="
+        currentTime = (18+24)/2
+        
+        if(currentTime >=6 && currentTime <=12){
+            alert('Good morning!');
+        }else if(currentTime >= 13 && currentTime <= 17){
+            alert('Good Afternoon!');
+        }else{
+            alert('Good night!');
+        } ">other</button>
+        
+        <h2>2. Select your age for amusement park ride to find out if allowed or not.(discount of 40% for senior citizens)</h2>
+
+        <button onclick="
+        customerAge = 17;
+        if(customerAge < 18){
+            alert('You are not allowed on this ride!');
+        }else if(customerAge >18 && customerAge <=50 ){
+            alert('You are allowed on this ride!');
+        }else if(customerAge > 50){
+            alert('you get 40% discount on this ride!');
+        }">Below 18</button>
+        <button onclick="
+        customerAge = (18+50)/2; //for average age
+        if(customerAge < 18){
+            alert('You are not allowed on this ride!');
+        }else if(customerAge >18 && customerAge <=50 ){
+            alert('You are allowed on this ride!');
+        }else if(customerAge > 50){
+            alert('you get 40% discount on this ride!');
+        }">18-50</button>
+        <button onclick="
+        customerAge = 52;
+        if(customerAge < 18){
+            alert('You are not allowed on this ride!');
+        }else if(customerAge >18 && customerAge <=50 ){
+            alert('You are allowed on this ride!');
+        }else if(customerAge > 50){
+            alert('you get 40% discount on this ride!');
+        }">above 50</button>
+
+        <h2>3. Guess whether the tossed coin is head or tails .</h2>
+        <button onclick="
+        let tossedCoin = Math.random();
+        let result = '';
+        if(tossedCoin >0.5){
+            tossedCoin = 'heads';
+        }else if(tossedCoin <=0.5){
+            tossedCoin = 'tails';
+        }
+
+        if(tossedCoin === 'heads'){
+             result = 'You win';
+        } else if (tossedCoin === 'tails'){
+            result = 'You lose';
+        }
+        alert(`you guessed heads. the result of coin toss was ${tossedCoin}.${result}.`)
+        ">Heads</button>
+        <button onclick="
+        let tossedCoin2 = Math.random();
+        let result2 = '';
+        if(tossedCoin2 >0.5){
+            tossedCoin2 = 'heads';
+        }else if(tossedCoin2 <= 0.5){
+            tossedCoin2 = 'tails';
+        }
+
+        result2 = tossedCoin2 === 'heads' ? 'You lose': 'You win';
+        alert(`you guessed heads. the result of coin toss was ${tossedCoin2}.${result2}.`) ">Tails</button>
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2026 Sarvesh</p>
+    </footer>
+    <script>
+        let currentTime = 0;
+        let customerAge = 0;
+       
+    </script>
+</body>
+</html>

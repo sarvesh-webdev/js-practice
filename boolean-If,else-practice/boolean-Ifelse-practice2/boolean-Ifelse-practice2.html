@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sarvesh">
+    <meta name="description" content="2nd practice file for learning or practicing the concepts of if,else statemet and boolean"> 
+    <title>Boolean If else practice 2</title>
+    <link rel="stylesheet" href="boolean-Ifelse-practice2.css">
+</head>
+<body>
+    <header>
+        <h1>boolean if else practice 2</h1>
+    </header>
+    <main>
+        <h2>1. Add to cart.max Quantity of cart is 10 and min is 0. (check in console)</h2>
+        <button onclick="
+        if(cartQuantity >= 2){
+            cartQuantity -= 2;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }else{
+            console.log(`Cart if Empty`);
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }" >-2</button>
+        <button onclick="
+        if(cartQuantity > 0){
+            cartQuantity --;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }else{
+            console.log(`Cart if Empty`);
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }">Remove from cart</button>
+        <button onclick="
+        if(cartQuantity < 10){
+            cartQuantity ++;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }else{
+            console.log(`Cart if full`);
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }">Add to cart</button>
+        <button onclick="
+        if(cartQuantity < 8){
+            cartQuantity += 2;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }else{
+            console.log(`Cart if full`);
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }">+2</button>
+        <button onclick="
+        cartQuantity = 0;
+        console.log('Cart Quantity is reset');
+        console.log(`Cart Quantity: ${cartQuantity}`);">Reset</button>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sarvesh</p>
+    </footer>
+    <script>
+        let cartQuantity = 0;
+       
+    </script>
+</body>
+</html>

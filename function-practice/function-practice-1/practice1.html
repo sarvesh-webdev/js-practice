@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh">
+    <meta name="description" content="practice file for practicing function in js">
+    <title>function practice 1</title>
+    <!--css link-->
+    <link rel="stylesheet" href="practice1.css">
+</head>
+<body>
+    <header><h1>practicing function in js</h1></header>
+    <main>
+        <h2>1. Creating a function called greet which display 'hello!' in console.</h2>
+        <button onclick="
+         greet();
+        ">
+        greet in console</button>
+
+        <h2>2. adding parameter called 'name' to greet function, and making it display in console in front of 'hello!'.(when name is not defined will show 'hi,there')</h2>
+        <button onclick="
+        greetWithName('john');
+        ">john</button>
+        <button onclick="
+        greetWithName('steven');
+        ">steven</button>
+        <button onclick="
+        greetWithName('michel');
+        ">michel</button>
+        <button onclick="
+        greetWithName('loies');
+        ">loies</button>
+        <button onclick="
+        greetWithName('luffy');
+        ">luffy</button>
+        <button onclick="
+        greetWithName('');
+        ">Null</button>
+
+        <h2>3. Creating a function to convert degree celcius to fahrenheit and viceversa</h2>
+
+        <button onclick="
+         console.log(convertToFahrenheit(25));
+        ">25 c</button>
+
+        <button onclick="
+         console.log(convertTocelcius(86));
+        ">86 F</button>
+
+    </main>
+    <footer><p> &copy; 2026 Sarvesh </p></footer>
+    <script>
+        function greet(){
+            console.log('hello!');
+        }
+        function greetWithName(name){
+            if(!name){
+                console.log('hi,there');
+            }
+            else{
+               console.log(`hello!,${name}`);  
+            }
+           
+        }
+
+        function convertToFahrenheit(celcius){
+            let fahrenheit = (celcius * 9/5)+32;
+            return fahrenheit; 
+        }
+
+        function convertTocelcius(fahrenheit){
+            return (fahrenheit-32)*5/9;
+        }
+
+        function convertTemperature(value,degree){
+            if(degree === 'c'){
+               console.log(convertToFahrenheit(value));
+            }else if(degree === 'f'){
+                console.log(convertTocelcius(value))
+            }
+        }
+    </script>
+</body>
+</html>

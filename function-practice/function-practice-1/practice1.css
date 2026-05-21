@@ -1,0 +1,22 @@
+/*css file for practice1 html file*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+button{
+    margin-right: 10px;
+    padding: 5px;
+    transition: transform 0.15s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.208) ;
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}

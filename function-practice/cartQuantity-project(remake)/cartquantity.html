@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sarvesh">
+    <meta name="description" content="practice file of variable topic of js">
+    <title>cart quantity project (remake)</title>
+    <!--css links-->
+    <link rel="stylesheet" href="cartquantity.css">
+</head>
+<body>
+    <header>
+        <h1>cart quantity project (remake)</h1>
+        <p>click on "add to cart" button and open console to see the result</p>
+    </header>
+    <main>
+        <div class="img-container">
+            <p  class="result-text" id="result">0</p>
+            <img src="../img-folder/Shopping-Cart-PNG-Image-HD.png" alt="cart-img"></div>
+        <div class="button-container">
+          
+            <div class="button-container-topSection"> 
+             <button onclick=" updateCartQuantity(1);
+             handlecart();  
+             ">Add to cart</button>
+             <button onclick=" updateCartQuantity(2);
+             handlecart();
+         
+             ">+2</button>
+             <button onclick=" updateCartQuantity(3);
+             handlecart();
+     
+             ">+3</button>
+            </div>
+            <button onclick="
+            clearCart();
+            handlecart();
+     
+            " class="reset-button">Reset</button>
+        </div>
+    </main>
+    <footer>
+    <p>&copy; 2026 Sarvesh</p>
+  </footer>
+
+  <!--js code below-->
+  <script>
+    let cartQuantity = 0;
+
+    function clearCart(){
+        cartQuantity = 0;
+    }
+    function updateCartQuantity(value){
+        cartQuantity += value;
+    }
+    function handlecart(){
+        document.getElementById('result').textContent = cartQuantity;
+    }
+  </script>
+</body>
+</html>

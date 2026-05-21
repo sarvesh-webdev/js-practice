@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh">
+    <meta name="description" content="making a project where we convert units like lbs and foot">
+    <title>Unit Conversion project</title>
+    <!--css links-->
+    <link rel="stylesheet" href="UnitConversion.css">
+</head>
+    <body>
+    <header><h1>Unit Conversion Project</h1></header>
+    <main>
+     <h2>1. converting degree celcius to fahrenheit and viceversa.</h2>
+     <label for="Value">Input value</label>
+     <div class="input-container">
+        <input type="number" id="value" class="inputBox">
+     <select id="tempDegree">
+        <option value="c">celcius(c°)</option>
+        <option value="f">fahrenheit(f°)</option>
+     </select>
+     <button onclick="handleConversion();">Enter</button>
+    </div>
+    <p class="result-text" id="result"></p>
+
+    <h2>2.converting distance like miles,km,feet.</h2>
+    <label for="distanceValue">Input value</label>
+    <div class="input-container">
+        <input type="number" name="distanceValue" id="distanceValue" class="inputBox">
+        <select id="distanceUnit">
+            <option value="miles">Miles</option>
+            <option value="km">KM</option>
+            <option value="feet">Feet</option>
+        </select>
+         <p class="input-text">Convert to:</p>
+        <select name="convertUnit" id="convertUnit">
+             <option value="miles">Miles</option>
+            <option value="km">KM</option>
+            <option value="feet">Feet</option>
+        </select>
+        <button onclick="handleDistanceConversion();">Enter</button>
+    </div>
+    <p class="result-text" id="distanceConversionResult"></p>
+
+        
+
+    </main>
+    <footer><p> &copy; 2026 Sarvesh </p></footer>
+    <script>
+        /*dont know dom yet just using with help of ai*/
+
+
+        function convertToFahrenheit(celcius){
+            return (celcius * 9/5)+32; 
+        }
+
+        function convertToCelcius(fahrenheit){
+            return (fahrenheit-32)*5/9;
+        }
+
+        function convertTemperature(value,degree){
+            if(degree === 'c'){
+               document.getElementById('result').textContent = `Converted value: ${convertToFahrenheit(value)}° F`;
+            }else if(degree === 'f'){
+                document.getElementById('result').textContent = `Converted value:${convertToCelcius(value)}° C`;
+            }
+        }
+        function handleConversion(){
+            const value = document.getElementById('value').value;
+            const degree = document.getElementById('tempDegree').value;
+
+            convertTemperature(value,degree);
+
+        }
+
+        //2nd one
+
+        function convertToKm(valueInMiles){
+           return valueInMiles*1.6;
+        }
+
+        function convertToMiles(valueInKm){
+            return valueInKm/1.6;
+        }
+
+        function milesToFeet(miles){
+            return miles*5280;
+        }
+        function feetTomiles(feet){
+            return feet/5280;
+        }
+
+        function kmToFeet(km){
+            return km*3281;
+        }
+
+        function feetToKm(feet){
+            return feet/3281;
+        }
+
+        function convertDistance(value,from,to){
+            if(from === to){
+                return `${value} ${to}`
+            }else{
+                if(from ==='miles' && to === 'km'){
+                    return `${convertToKm(value)} ${to}`;
+                }else if(from === 'km' && to === 'miles'){
+                    return `${convertToMiles(value)} ${to}`;
+                }else if(from === 'miles' && to === 'feet'){
+                    return `${milesToFeet(value)} ${to}`;
+                }else if(from ==='feet' && to === 'miles'){
+                    return `${feetTomiles(value)} ${to}`;
+                }else if(from === 'km' && to === 'feet'){
+                    return `${kmToFeet(value)} ${to}`;
+               }else if(from === 'feet' && to === 'km'){
+                    return `${feetToKm(value)} ${to}`;
+               }
+            }
+        }
+
+        function handleDistanceConversion(){
+            const value = document.getElementById('distanceValue').value;
+
+            const from = document.getElementById('distanceUnit').value;
+
+            const to = document.getElementById('convertUnit').value;
+
+            let result = convertDistance(value,from,to);
+
+            document.getElementById('distanceConversionResult').textContent= `Converted value: ${result}`
+
+        }
+    </script>
+</body>
+</html>

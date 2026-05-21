@@ -31,12 +31,20 @@ Each folder represents a different set of topics or experiments.
 
 ![boolean-If,else practice](assets/js-boolean-if,else3.png)
 
+- function-practice
+
+![function practice](assets/function-practice-1.png)
+
+![function practice](assets/function-practice-2.png)
+
+
 ---
 
 ## 📂 Folder Structure
 - **jsBasic-practice/** → introductory scripts and small experiments  
 - **variable-practice/** -> contain 3 folders with different practices described below
 - **boolean-if,else-practice** -> contain 3 folder with different practices describe below
+- **function-practice**-> contains practice folder and remake projects folder using function.
 ---
 
 ## 📘 Practice Details
@@ -63,3 +71,9 @@ Introductory scripts focusing on fundamental JavaScript concepts.
 - in 2nd practice  folder created a cart variable which gets updated or cleared when button is clicked , showed the updated quantity in console
 - in 3rd practice folder made a rock paper scissor game
 
+### 4. function-practice
+ Introductoin to function, and created and also remake somethings using that
+
+ - `unit-conversion-project` :- make unit conversion project like converting celcius to farenhite and vice versa or km to feet or miles and vice versa
+ - `cart-quantity-project(remake)` :- remake cart project using function and also added dom to display the output on screen
+ - rest are practice folders and also some practice projects which i remake using function.  

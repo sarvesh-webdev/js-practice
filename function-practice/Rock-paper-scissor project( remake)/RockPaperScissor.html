@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh">
+    <meta name="description" content="Remaking rock paper scissor project using function">
+    <title>RockPaperScissor Project Remake
+    </title>
+    <!--css links-->
+    <link rel="stylesheet" href="RockPaperScissor.css">
+</head>
+<body>
+   <header>
+    <h1>Rock Paper Scissor Project Remake using function</h1> 
+   </header>
+   <main>
+    <p>You are playing with computer select one of the below option.</p>
+    <div class="button-container">
+    <button onclick="
+        playMove('rock');
+        
+        "><img src="../img-folder/rock-img.jpg" alt="rock-img"></button>
+    <button onclick="
+    playMove('paper');
+    ">
+        <img src="../img-folder/paper-img.jpg" alt="paper-img">
+    </button>
+    <button onclick="
+    playMove('scissor');
+    ">
+    <img src="../img-folder/scissor-img.jpg" alt="scissor-img">
+    </button>
+   </div>
+</main>
+   <footer> <p>&copy; 2026 Sarvesh</p> </footer>
+
+<script>
+    function generateComputerMove(){
+        let randomNum = Math.random();
+        if(randomNum < 1/3){
+            return 'rock';
+        }else if(randomNum <2/3 && randomNum >= 1/3){
+            return 'paper';
+        }else if(randomNum >= 2/3){
+                 return 'scissor';
+        }
+    }
+
+    function generateResult(myMove,computerMove){
+        if(myMove === computerMove ){
+            return 'Tie';
+        }else if(
+           (myMove === 'rock' && computerMove === 'paper' ) || (myMove === 'paper' && computerMove === 'scissor') || (myMove === 'scissor' && computerMove === 'rock') ){
+            return 'You lose';
+        }else{
+            return 'You win';
+        }
+    }
+
+    function playMove(myMove){
+        let computerMove = generateComputerMove();
+        alert(`your choice: ${myMove} \ncomputer choice: ${computerMove}.\n ${generateResult(myMove,computerMove)}`);
+    }
+</script>   
+</body>
+
+</html>

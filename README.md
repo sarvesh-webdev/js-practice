@@ -37,7 +37,9 @@ Each folder represents a different set of topics or experiments.
 
 ![function practice](assets/function-practice-2.png)
 
+- object-practice
 
+![object practice](assets/object-practice.png)
 ---
 
 ## 📂 Folder Structure
@@ -77,3 +79,11 @@ Introductory scripts focusing on fundamental JavaScript concepts.
  - `unit-conversion-project` :- make unit conversion project like converting celcius to farenhite and vice versa or km to feet or miles and vice versa
  - `cart-quantity-project(remake)` :- remake cart project using function and also added dom to display the output on screen
  - rest are practice folders and also some practice projects which i remake using function.  
+
+### 5. object-practice
+ Introduction to object created things using that
+
+ - `coint-flip-game` :- coin is flipped when guessed added animation and also inbuit object like json and localstorage so that the output or score doesnt go away when the page is refreshed
+
+- `rock-paper-scissorWithScoreBoard` :-
+ recreated same project now added score board used object for that and also use localstorage so the doesnt get wiped out when refrehed

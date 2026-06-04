@@ -1,0 +1,74 @@
+/*styles of rock paper scissor practice project */
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.button-container{
+    display: flex;
+    height: 200px;
+    gap: 20px;
+
+}
+button{
+    width: 170px;
+    padding: 0;
+    border: 3px solid black;
+    transition: transform 0.15s;
+}
+
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.668);
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.output-display{
+    background-color: rgb(241, 240, 255);
+    margin-top: 50px;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 530px;
+    
+}
+
+td,th{
+    padding: 10px;
+    text-align: center;
+}
+
+.reset-button{
+    padding: 4px;
+    margin-top: 10px;
+    margin-left: 184px;
+
+}
+
+.reset-button:hover{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.238);
+}
+
+.reset-button:active{
+    box-shadow:none;
+}

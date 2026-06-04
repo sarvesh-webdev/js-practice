@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh" >
+    <meta name="description" content="practicing object in js">
+    <title>Coin Flip guess game</title>
+    <!--css links-->
+    <link rel="stylesheet" href="CoinFlipGuessGame.css">
+
+</head>
+<body>
+    <header><h1>Coin flip guess game</h1></header>
+    <main>
+       <div class="container-main">
+     <div class="button-container">
+        <img src="../img-folder/coin.png" alt="coin-img" id="coin">
+        <button id="head-button" onclick="playGameAfterAnimation('heads');">heads</button>
+     <button id="tail-button" onclick="playGameAfterAnimation('tails');">tails</button></div>
+     <p id="result">Output Here</p>
+     <table>
+        <tr><th>wins</th>
+        <th>loses</th></tr>
+        <tr>
+            <td id="wins">0</td>
+            <td id="loses">0</td>
+        </tr>
+     </table>
+     <button onclick="
+     resetScore();
+     ">Reset</button></div> 
+     
+    </main>
+    <footer>&copy; 2025 Sarvesh</footer>
+    <script>
+
+        const score = JSON.parse(localStorage.getItem('score')) ||{
+            wins:0,
+            loses:0
+            
+        };
+        document.getElementById("wins").textContent = score.wins;
+        document.getElementById("loses").textContent = score.loses;
+    function tossResult(){
+        let result = Math.random();
+        if(result >1/2){
+            return 'heads';
+        }else{
+           return 'tails';
+        }
+    }
+    function playGameAfterAnimation(guess){
+       document.getElementById("head-button").style.display = "none";
+       document.getElementById("tail-button").style.display = "none";
+       document.getElementById("coin").style.display = "block";
+       setTimeout(function(){
+        playGame(guess);
+       },1800);
+    }
+     function playGame(guess){
+      
+       let result = tossResult();
+       if(guess === result){
+        score.wins++;
+        document.getElementById("result").innerHTML = `It was ${result}.<br> You Win`;
+        document.getElementById("wins").textContent = score.wins;
+
+       }else{
+        score.loses++;
+        document.getElementById("result").innerHTML = `It was ${result}. <br> You Lose`;
+        document.getElementById("loses").textContent = score.loses;
+       }
+       localStorage.setItem('score',JSON.stringify(score));
+       document.getElementById("head-button").style.display = "inline-block";
+       document.getElementById("tail-button").style.display = "inline-block";
+       document.getElementById("coin").style.display = "none";
+     }
+
+     function resetScore(){
+      localStorage.removeItem('score');
+       score.wins = 0;
+       score.loses = 0;
+      document.getElementById("wins").textContent = score.wins;
+      document.getElementById("loses").textContent = score.loses;
+      document.getElementById("result").textContent = "Output Here";
+     }
+     
+     
+    
+    </script>
+</body>
+</html>

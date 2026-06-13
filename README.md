@@ -40,6 +40,12 @@ Each folder represents a different set of topics or experiments.
 - object-practice
 
 ![object practice](assets/object-practice.png)
+
+- DOM-practice
+
+![DOM practice](assets/dom-practice1.png)
+
+![DOM practice](assets/dom-practice2.png)
 ---
 
 ## 📂 Folder Structure
@@ -47,6 +53,8 @@ Each folder represents a different set of topics or experiments.
 - **variable-practice/** -> contain 3 folders with different practices described below
 - **boolean-if,else-practice** -> contain 3 folder with different practices describe below
 - **function-practice**-> contains practice folder and remake projects folder using function.
+- **object-practice**-> contains practice folder of object topic
+- **DOM-practice** -> contains practice folders of dom topic
 ---
 
 ## 📘 Practice Details
@@ -87,3 +95,9 @@ Introductory scripts focusing on fundamental JavaScript concepts.
 
 - `rock-paper-scissorWithScoreBoard` :-
  recreated same project now added score board used object for that and also use localstorage so the doesnt get wiped out when refrehed
+
+### 6. DOM - pracitce
+
+ - make a calculator site using eval and style using css
+
+ - contain 2 more practice folder of dom

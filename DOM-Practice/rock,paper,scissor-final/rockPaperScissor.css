@@ -1,0 +1,121 @@
+/*css file for rockPaperScissor html file*/
+
+/*styles of rock paper scissor practice project */
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+header{
+    height: 10%;
+    margin-bottom: 2rem;
+    
+}
+h1{
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    padding-top:2rem;
+    padding-left: 1rem;
+
+}
+body{
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+   
+
+}
+button{
+    width: 11rem;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: transparent;
+    transition: transform 0.15s;
+}
+
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.577);
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.output-display{
+    border: 1px dashed white;
+    margin-top: 50px;
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+table,td,th{
+    height: 5rem;
+    border: 3px solid white;
+    border-collapse: collapse;
+    width: 45rem;
+    margin-bottom: 3rem; 
+    font-size: 2rem;
+}
+
+td,th{
+    padding: 10px;
+    text-align: center;
+}
+
+.reset-button{
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+.reset-button:hover{
+    box-shadow: 0 0 2px rgb(229, 219, 219);
+}
+
+.reset-button:active{
+    box-shadow:none;
+}
+
+
+section{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayed-img{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: -10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh">
+    <meta name="description" content="Practice of dom topic of js">
+    <title>DOM Practice</title>
+    <!--Css links-->
+    <link rel="stylesheet" href="domPractice.css">
+</head>
+<body>
+    <header><h1>Practice for DOM</h1></header>
+    <main> 
+        <section>
+             <h2>youtube subscribe button</h2>
+        <button class="js-button btn-subscribe" onclick="changeButtonText()">Subscribe</button>
+        </section>
+       
+        
+        <section>
+            <h2>Amazon Shipping Calculator</h2>
+            <h3>Order Under $40 = +$10 Shipping</h3>
+            <h3>Above $40 = Free Shipping</h3>
+            <div class="inputbox-wrapper">
+                 <input type="number" placeholder="Cost of Order" id="js-NumberInput" onkeydown="onKeyDownEnter(event);">
+            <button class="js-Calculate-btn" onclick="displayCost();">Calculate</button>
+            </div>
+
+            <p class="js-DisplayCost"></p>
+        
+        </section>
+        <section>
+            <h2>Enter Name and it will display</h2>
+           <div class="inputbox-wrapper"> <input type="text" placeholder="Name" onkeydown="handleEnterName(event);" class="input-name">
+            <button onclick="displayName();">Enter</button></div> 
+            <p class="display-name"></p>
+        </section>
+
+        <section>
+            <h2>Live Typing (using onkeyup) </h2>
+            <input type="text" placeholder="Enter" class="live-text-input" onkeyup="handleLiveText();">
+            <p class="live-text-output"></p>
+        </section>
+
+    
+    
+    </main>
+    <footer>&copy; 2026 Sarvesh</footer>
+    <script src="domPractice.js">
+       
+    </script>
+    
+</body>
+</html>

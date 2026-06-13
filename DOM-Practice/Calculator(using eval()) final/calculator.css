@@ -1,0 +1,73 @@
+/*css file for calculator html file*/
+header{
+    
+    text-align: center;
+    font-size: 1.3rem;
+}
+main{
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+body{
+    color: white;
+    background-color: rgb(43, 43, 43);
+}
+h1{
+    text-decoration: underline;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width:24rem;
+    margin-top: 100pX;
+    gap: 1rem;
+}
+
+.button-container div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.button-container button{
+    height: 5.3rem;
+    width: 6rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(120, 118, 118);
+    
+}
+.button-container .clear-btn{
+   width: 5.7rem;
+}
+.button-container .sign-btn{
+    background-color: rgb(244, 185, 77);
+}
+.result-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: -80px;
+    background-color: rgba(128, 128, 128, 0.004);
+    min-width:23rem;
+    height: 4rem;
+    padding: 10px 4px 0 10px;
+    display: flex;
+    width:fit-content;
+    
+}
+
+@media(min-width:1000px){
+    html{
+        font-size: 17px;
+    }
+}

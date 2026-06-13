@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarvesh">
+    <meta name="description" content="Remaking rock paper scissor project ,adding score board to it and storing it in localStorage so that score doesnt get reset when page is refresh">
+    <title>RockPaperScissors
+    </title>
+    <!--css links-->
+    <link rel="stylesheet" href="rockPaperScissor.css">
+</head>
+<body>
+   <header>
+    <h1>Rock Paper Scissors</h1> 
+   </header>
+   <main>
+    <div class="button-container">
+    <button onclick="
+        playMove('rock');
+        
+        "><img src="../img/rock-emoji.png" alt="rock-img"></button>
+    <button onclick="
+    playMove('paper');
+    ">
+        <img src="../img/paper-emoji.png" alt="paper-img">
+    </button>
+    <button onclick="
+    playMove('scissor');
+    ">
+    <img src="../img/scissor-emoji.png" alt="scissor-img">
+    </button>
+   </div>
+   <section>
+    <p id="output" class="output-display">output here</p>
+    <div class="table-container"><table>
+        <tr>
+            <th>wins</th>
+            <th>loses</th>
+            <th>tie</th>
+        </tr>
+        <tr>
+            <td id="win">0</td>
+            <td id="lose">0</td>
+            <td id="tie">0</td>
+        </tr>
+    </table></div>
+    
+    <button class="reset-button" onclick="resetScore();">Reset</button>
+</section>
+    
+    
+    
+</main>
+   <footer> <p>&copy; 2026 Sarvesh</p> </footer>
+
+<script src="rockPaperScissor.js">
+   
+</script>   
+</body>
+
+</html>

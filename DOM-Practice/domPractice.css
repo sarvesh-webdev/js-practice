@@ -1,0 +1,83 @@
+/*css file for domPractice html file*/
+
+footer{
+    margin-top: auto;
+}
+body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: rgb(216, 193, 193);
+    height: 6rem;
+    
+}
+h1{ font-size: 3rem;
+    text-decoration: underline;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 3rem;
+    font-size: 1.5rem;
+    
+}
+
+input{
+    height: 2.3rem;
+    width: 50%;
+    font-size: 1.3rem;
+    padding-left:0.6rem ;
+}
+
+.inputbox-wrapper{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+button{
+     padding: 0.6rem 3rem;
+     font-size: 17px;
+     background-color: rgb(60, 211, 60);
+     font-weight: 600;
+     color: white;
+    transition: transform 0.15s,box-shadow 0.15s;
+}
+
+.btn-subscribe{
+    font-size: 1.4rem;
+    padding:0.8rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(205, 11, 11);
+    color: white;
+    cursor: pointer;
+   
+}
+
+button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.542);
+    transform: scale(1.02);
+
+}
+
+button:active{
+    box-shadow: none;
+    transform: scale(0.99);
+}
+
+.btn-subscribed{
+    background-color: black;
+
+}

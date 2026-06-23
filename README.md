@@ -46,6 +46,9 @@ Each folder represents a different set of topics or experiments.
 ![DOM practice](assets/dom-practice1.png)
 
 ![DOM practice](assets/dom-practice2.png)
+
+- Arrays-loops-practice
+ ![array loops practice](assets/Arrays-loops-practice.png)
 ---
 
 ## 📂 Folder Structure
@@ -55,6 +58,7 @@ Each folder represents a different set of topics or experiments.
 - **function-practice**-> contains practice folder and remake projects folder using function.
 - **object-practice**-> contains practice folder of object topic
 - **DOM-practice** -> contains practice folders of dom topic
+- **Arrays-loops-practice** -> contains practice folders of arrays and also Todo List project
 ---
 
 ## 📘 Practice Details
@@ -101,3 +105,9 @@ Introductory scripts focusing on fundamental JavaScript concepts.
  - make a calculator site using eval and style using css
 
  - contain 2 more practice folder of dom
+
+### 7. Arrays-loops-practice
+
+ - contains practice folders of arrays topic
+
+ - contain todo-list project

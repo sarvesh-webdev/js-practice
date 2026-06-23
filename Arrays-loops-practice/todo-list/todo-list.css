@@ -1,0 +1,61 @@
+/*css files for todo list html file*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+input{
+    width: 100%;
+    height: 2rem;
+    font-size:1rem ;
+    padding-left:10px;
+}
+button{
+font-size: 1rem;
+height: 100%;
+width: 100%;
+color: white;
+background-color: rgb(90, 197, 90);
+}
+
+.delete-btn{
+    height: 2rem;
+    background-color: rgb(193, 21, 21);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    max-width: 50rem;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.result-display div{
+    font-size: 1rem;
+    font-weight: 600;
+}
+main{
+    padding: 0 10%;
+}
+
+
+@media(min-width:750px) and (max-width:1000px){
+html{
+    font-size: 20px;
+}
+}
+@media(min-width:1001px){
+    html{
+        font-size: 25px;
+    }
+}
